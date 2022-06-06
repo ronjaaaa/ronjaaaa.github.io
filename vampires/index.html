@@ -52,5 +52,41 @@
         </div>
       </div>
     </div>
+    
+    <div class='row card-group'>
+{% for item in object_list %}
+  <div class="col-4">
+    <div class="card h-100">
+      <embed
+        src="{{ item.image.url }}"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+            <h4 class="font-weight-bold blue-text">
+                <strong>
+                    {% if item.discount_price %}
+                    <small><span class="badge badge-pill danger-color">Discount was <del>${{ item.price }}</del></span></small>
+                    <br>
+                    Now ${{ item.discount_price }}
+                    {% else %}
+                    ${{ item.price}}
+                    {% endif %}
+                </strong>
+            </h4>
+        <p class="card-text">
+        {{ item.description }}
+        </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+    
   </body>
 </html>
