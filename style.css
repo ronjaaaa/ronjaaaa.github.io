@@ -3,23 +3,26 @@ body  {
  background-color: #000000;
 }
 h1 {
-color: #cc0000;
+ color: #cc0000;
 }
 h2 {
-color: #cc0000;
+ color: #cc0000;
 }
 h5 {
-color: #cc0000;
+ color: #cc0000;
 }
 h6 {
-color: #cc0000;
+ color: #cc0000;
 }
 p {
-color: #ffffff;
+ color: #ffffff;
 }
 ul {
-color: #ffffff;
+ color: #ffffff;
 }
 ol {
-color: #ffffff;
+ color: #ffffff;
+}
+h3 {
+ background-color: #000000;
 }
